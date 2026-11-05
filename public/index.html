@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callia - AI receptionist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-state="idle">
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="3" y="11" width="3.5" height="8" rx="1.75"/><rect x="9.5" y="6" width="3.5" height="18" rx="1.75"/>
+          <rect x="16" y="9" width="3.5" height="12" rx="1.75"/><rect x="22.5" y="12.5" width="3.5" height="5" rx="1.75"/>
+        </svg>
+        <span>Callia</span>
+      </div>
+      <nav id="nav" aria-label="Sections">
+        <button data-tab="overview" class="on">Overview</button>
+        <button data-tab="test">Live demo</button>
+        <button data-tab="appts">Appointments</button>
+        <button data-tab="calls">Calls</button>
+        <button data-tab="settings">Business settings</button>
+      </nav>
+      <div class="side-foot">
+        <strong id="bizName">Your business</strong>
+        <span>Answers in Armenian, Russian and English</span>
+      </div>
+    </aside>
+
+    <main>
+      <section id="overview" class="on">
+        <header class="page"><h1>Overview</h1><p>What Callia has handled at your front desk.</p></header>
+        <p id="summary" class="statement">Loading activity...</p>
+        <div class="two">
+          <div><h2>Recent calls</h2><div id="recentCalls"></div></div>
+          <div><h2>Upcoming appointments</h2><div id="nextAppts"></div></div>
+        </div>
+      </section>
+
+      <section id="test">
+        <header class="page"><h1>Live demo</h1><p>Start a call and talk, or type a message. Try asking for opening hours or booking a cleaning.</p></header>
+        <div class="demo">
+          <div class="stage">
+            <div class="orb" aria-hidden="true"><i></i><i></i><i></i></div>
+            <p id="status" class="state" aria-live="polite">Microphone off</p>
+            <button class="primary big" id="listen">Start call</button>
+            <p class="hint">Your browser will ask for microphone access. Callia replies out loud.</p>
+          </div>
+          <div class="transcript">
+            <div id="log" aria-live="polite"></div>
+            <div class="compose">
+              <input id="msg" placeholder="Or type what a caller would say" aria-label="Message">
+              <button class="primary" id="send">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="appts">
+        <header class="page"><h1>Appointments</h1><p>Everything Callia has booked, in date order.</p></header>
+        <div id="apptList"></div>
+      </section>
+
+      <section id="calls">
+        <header class="page"><h1>Calls</h1><p>Open a call to read the full conversation.</p></header>
+        <div id="callList"></div>
+      </section>
+
+      <section id="settings">
+        <header class="page"><h1>Business settings</h1><p>Callia answers only from what you write here.</p></header>
+        <div id="form"></div>
+        <div class="token">
+          <label for="token">Admin token <small>(only if you set one in .env)</small></label>
+          <input id="token" type="password" autocomplete="off">
+        </div>
+        <p class="actions"><button class="primary" id="save">Save changes</button> <span id="saved" class="muted"></span></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="voice.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+{
+  "business": {
+    "name": "Demo Dental Clinic",
+    "greeting": "Hello, thank you for calling Demo Dental Clinic. How can I help you?",
+    "hours": "Mon-Sat 10:00-18:00, closed Sunday",
+    "address": "Tumanyan 12, Yerevan",
+    "transferNumber": "+37410000000",
+    "services": "Check-up (8000 AMD, 30 min); Cleaning (15000 AMD, 45 min); Whitening (40000 AMD, 60 min)",
+    "faqs": "Parking is free in the courtyard. We accept cash and cards. First visit includes a free consultation.",
+    "languages": "Armenian, Russian, English"
+  },
+  "appointments": [],
+  "calls": [
+    {
+      "id": "web-fj55p8pmkj",
+      "channel": "web",
+      "startedAt": "2026-11-01T10:14:40.427Z",
+      "transcript": [
+        {
+          "who": "caller",
+          "text": "I want"
+        },
+        {
+          "who": "ai",
+          "text": "What service would you like to book? We offer check-ups, cleaning, and whitening."
+        }
+      ],
+      "transferred": false,
+      "reason": ""
+    },
+    {
+      "id": "web-1bootwcvxcy",
+      "channel": "web",
+      "startedAt": "2026-11-01T10:15:14.256Z",
+      "transcript": [
+        {
+          "who": "caller",
+          "text": "Hello, do you have a free sp"
+        },
+        {
+          "who": "ai",
+          "text": "Hello, how can I help you? Are you looking to book an appointment?"
+        }
+      ],
+      "transferred": false,
+      "reason": ""
+    },
+    {
+      "id": "web-sbr60ls3x2j",
+      "channel": "web",
+      "startedAt": "2026-11-01T10:15:51.542Z",
+      "transcript": [
+        {
+          "who": "caller",
+          "text": "Hello, I want to book an appointment for tomorrow"
+        },
+        {
+          "who": "ai",
+          "text": "Sure, what service do you need, what time works, and could I have your name and phone number?"
+        },
+        {
+          "who": "caller",
+          "text": "I want a consultation since my teeth is hurting too much."
+        },
+        {
+          "who": "ai",
+          "text": "Sure, we offer a free consultation for your first visit. What time tomorrow works for you, and may I have your name and phone number?"
+        },
+        {
+          "who": "caller",
+          "text": "yes sure my name is narek"
+        },
+        {
+          "who": "ai",
+          "text": "Thank you, Narek. Could you please provide your phone number and let me know what time works for you tomorrow?"
+        },
+        {
+          "who": "caller",
+          "text": "my phone number is 93431311 and I want to book on 12th"
+        },
+        {
+          "who": "ai",
+          "text": "Thank you, Narek. What time on November 12th suits you best? I have slots available from 10:00"
+        },
+        {
+          "who": "caller",
+          "text": "Yeah, let's make it 11."
+        },
+        {
+          "who": "ai",
+          "text": "Great, I have your appointment for 11:00 on November 12th. Which service will you be needing?"
+        },
+        {
+          "who": "caller",
+          "text": "Only consultation"
+        },
+        {
+          "who": "ai",
+          "text": "Understood. Just to confirm: Narek, 93431311, consultation, November 12th at 11:00?"
+        }
+      ],
+      "transferred": false,
+      "reason": ""
+    },
+    {
+      "id": "web-ailebfcc89g",
+      "channel": "web",
+      "startedAt": "2026-11-01T10:18:13.000Z",
+      "transcript": [
+        {
+          "who": "caller",
+          "text": "Hello, my tooth"
+        },
+        {
+          "who": "ai",
+          "text": "Hello, sorry to hear that; our clinic is closed today, can you please hold for a representative?"
+        },
+        {
+          "who": "caller",
+          "text": "Yeah, I want to book an appointment for tomorrow."
+        },
+        {
+          "who": "ai",
+          "text": "Sure, what service would you like, and may I have your name and phone number, please?"
+        },
+        {
+          "who": "caller",
+          "text": "My name is Narek."
+        },
+        {
+          "who": "ai",
+          "text": "Thank you, Narek. What service would you like, and may I have your phone number, please?"
+        },
+        {
+          "who": "caller",
+          "text": "Yeah, my phone number is 000000."
+        },
+        {
+          "who": "ai",
+          "text": "Narek, we are closed on Sundays. Can I schedule your appointment for Monday instead?"
+        },
+        {
+          "who": "caller",
+          "text": "Uh, yes."
+        },
+        {
+          "who": "ai",
+          "text": "Great! What service do you need, and what time works best for you on Monday?"
+        },
+        {
+          "who": "caller",
+          "text": "I want free consultation."
+        },
+        {
+          "who": "ai",
+          "text": "We offer a free consultation for your first visit. What is your name and preferred time on Monday?"
+        },
+        {
+          "who": "caller",
+          "text": "I said my name is Narek. And I want to make it on 11."
+        },
+        {
+          "who": "ai",
+          "text": "Thank you, Narek. What is your phone number, and do you mean 11:00 AM on Monday, November 2nd?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes"
+        },
+        {
+          "who": "ai",
+          "text": "I still need your phone number to complete the booking for Monday at 11:00."
+        }
+      ],
+      "transferred": false,
+      "reason": ""
+    }
+  ]
+}
